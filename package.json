@@ -1,0 +1,20 @@
+{
+  "name": "adnan-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "ascii": "node scripts/ascii.mjs"
+  },
+  "dependencies": {
+    "vue": "^3.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.0",
+    "sharp": "^0.35.5",
+    "vite": "^5.4.0"
+  }
+}
