@@ -6,6 +6,12 @@ import NavBar from './components/NavBar.vue'
 import Header from './components/Header.vue'
 import SectionBlock from './components/SectionBlock.vue'
 
+function toggleFullscreen() {
+  const d = document, el = d.documentElement
+  if (d.fullscreenElement || d.webkitFullscreenElement) (d.exitFullscreen || d.webkitExitFullscreen).call(d)
+  else (el.requestFullscreen || el.webkitRequestFullscreen)?.call(el)
+}
+
 const title = `${profile.user}@${profile.host}:~$`
 const activeId = ref(sections[0].id)
 const cv = ref(false)
@@ -70,7 +76,7 @@ onBeforeUnmount(() => {
 <template>
   <div class="window">
     <div class="chrome">
-      <span class="controls" aria-hidden="true"><i class="control c1"></i><i class="control c2"></i><i class="control c3"></i></span>
+      <span class="controls"><i class="control c1" aria-hidden="true"></i><i class="control c2" aria-hidden="true"></i><button type="button" class="control c3" title="Toggle full screen" aria-label="Toggle full screen" @click="toggleFullscreen"></button></span>
       <span class="chrome-title">{{ title }}</span>
     </div>
 

@@ -174,3 +174,6 @@ h1, h2, h3, p, ul { margin: 0; }
 .edu-details dt { color: var(--muted); margin-top: 6px; }
 .edu-details dt::before { content: '> '; }
 .edu-details dd { margin: 0 0 0 16px; }
+
+button.control { padding: 0; cursor: pointer; font: inherit; }
+button.c3:hover, button.c3:focus-visible { filter: brightness(1.25); outline: 1px solid #98c379; outline-offset: 1px; }
