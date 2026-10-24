@@ -91,7 +91,7 @@ h1, h2, h3, p, ul { margin: 0; }
 .portrait-hint { width: 280px; margin: 0 0 6px; color: var(--muted); font-size: 10px; text-align: center; text-transform: lowercase; }
 .portrait-stack { position: relative; width: 280px; height: 248px; display: flex; justify-content: center; align-items: flex-end; }
 .portrait-stack[role='button'] { cursor: crosshair; }
-.ascii { margin: 0 0 -2px; font-family: var(--mono); color: var(--muted); font-size: 6.5px; line-height: 1.1; white-space: pre; transition: opacity .18s; }
+.ascii { margin: 0; font-family: var(--mono); color: var(--muted); font-size: 5.185px; line-height: 1.109; /* 90 cols x 43 rows = 280 x 247px, same box as the photo */ white-space: pre; transition: opacity .18s; }
 .ascii.is-hidden { opacity: 0; }
 .portrait-image { position: absolute; bottom: 0; left: 0; background: none; border: 0; width: 100%; max-width: 100%; height: auto; object-fit: contain; opacity: 0; transition: opacity .18s; image-rendering: auto; }
 .portrait-image.is-visible { opacity: 1; }

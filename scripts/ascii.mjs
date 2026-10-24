@@ -8,7 +8,7 @@
 //   --max-rows N    max height in characters (default 36)
 //   --tolerance N   (jpg fallback only) how close to the background colour counts as background (0-255, default 30)
 //   --gamma N       <1 brightens, >1 darkens midtones (default 0.9)
-//   --zoom N        crop in on the head, >1 enlarges the face (default 1.5)
+//   --zoom N        crop in on the head, >1 enlarges the face (default 1)
 //   --eq N          0-1 histogram equalisation strength (default 0.6)
 //   --floor N       0-1 minimum glyph density for the figure (default 0.22)
 //   --clahe N       local contrast (default 5)
@@ -21,7 +21,7 @@ const arg = (name, def) => {
   const i = process.argv.indexOf(`--${name}`)
   return i > -1 ? Number(process.argv[i + 1]) : def
 }
-const COLS_MAX = arg('cols', 70)
+const COLS_MAX = arg('cols', 90)
 const TOL = arg('tolerance', 30)
 const GAMMA = arg('gamma', 1.2)
 const KEEP_BG = process.argv.includes('--keep-bg')
@@ -56,7 +56,7 @@ if (hasPhoto && meta.hasAlpha) {
   useAlpha = al.some((v) => v < 250)
 }
 const FLAT = { background: '#000000' } // transparent areas become black before luminance is computed
-const MAX_ROWS = arg('max-rows', 40)
+const MAX_ROWS = arg('max-rows', 50)
 
 // --- pass 1: find the foreground bounding box (flat background removed) so the figure fills the character grid
 async function foregroundBox(img) {
@@ -112,7 +112,7 @@ if (hasPhoto && !KEEP_BG) {
   }
 }
 // optional zoom into the centre-top of the figure (e.g. --zoom 1.3 to enlarge the face)
-const ZOOM = arg('zoom', 1.5)
+const ZOOM = arg('zoom', 1)
 if (ZOOM > 1) {
   const w = Math.round(cropMeta.width / ZOOM), h = Math.round(cropMeta.height / ZOOM)
   const left = Math.round((cropMeta.width - w) / 2), top = Math.round((cropMeta.height - h) * arg('top-bias', 0))
