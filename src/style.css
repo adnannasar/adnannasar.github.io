@@ -169,3 +169,8 @@ h1, h2, h3, p, ul { margin: 0; }
   .nav, .status, .chrome, .portrait-hint { display: none; }
   .layout, .output { animation: none; }
 }
+
+.edu-details { margin: 10px 0 0; font-size: 13px; line-height: 1.6; }
+.edu-details dt { color: var(--muted); margin-top: 6px; }
+.edu-details dt::before { content: '> '; }
+.edu-details dd { margin: 0 0 0 16px; }

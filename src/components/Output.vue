@@ -38,10 +38,16 @@ defineEmits(['run'])
         <p v-if="x.period || x.location" class="dim">{{ [x.period, x.location].filter(Boolean).join(' · ') }}</p>
         <p v-if="x.description">{{ x.description }}</p>
       </article>
-      <h2 class="section">Education &amp; certifications</h2>
+      <h2 class="section">Education</h2>
       <article v-for="e in result.education" :key="e.title" class="card">
         <h2>{{ e.title }}</h2>
         <p class="dim">{{ e.issuer }} · {{ e.date }}</p>
+        <dl v-if="e.details" class="edu-details">
+          <template v-for="d in e.details" :key="d.label">
+            <dt>{{ d.label }}:</dt>
+            <dd>{{ d.items.join(', ') }}</dd>
+          </template>
+        </dl>
       </article>
     </template>
 

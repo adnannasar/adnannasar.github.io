@@ -40,6 +40,12 @@ defineProps({ section: { type: Object, required: true } })
             </div>
             <span class="card-meta">{{ e.date }}</span>
           </div>
+          <dl v-if="e.details" class="edu-details">
+            <template v-for="d in e.details" :key="d.label">
+              <dt>{{ d.label }}:</dt>
+              <dd>{{ d.items.join(', ') }}</dd>
+            </template>
+          </dl>
         </article>
       </div>
 
