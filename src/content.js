@@ -73,9 +73,6 @@ export const education = [
     title: 'National University of Computer and Emerging Sciences',
     issuer: "Master's degree, Computer Science and Information Technology",
     date: '2016 - 2018',
-    details: [
-      { label: 'Research areas', items: ['R&D', 'Internet of Things (IoT)', 'Big Data', 'Vehicular ad hoc networks (VANETs)'] },
-    ],
   },
   {
     title: 'The University of Lahore',
