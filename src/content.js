@@ -97,7 +97,7 @@ export const projects = [
 
 export const links = [
   { label: 'LinkedIn', url: 'https://www.linkedin.com/in/adnanalvi/' },
-  { label: 'GitHub', url: 'https://github.com/adnanalvi' },
+  { label: 'GitHub', url: 'https://github.com/adnannasar' },
 ]
 
 // TODO: add a public email address here if you want it shown. Hidden while empty.
