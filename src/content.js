@@ -42,8 +42,6 @@ export const experience = [
     company: 'Swedish Consultants',
     period: 'Sep 2025 - Present',
     location: 'Stockholm',
-    description:
-      'Business consulting helping students and professionals with international mobility, career advancement, work / business, and IT consultancy.',
   },
   {
     role: 'IT Consultant',
