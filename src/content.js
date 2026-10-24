@@ -16,7 +16,7 @@ export const profile = {
 export const sections = [
   { id: 'about', label: 'About', title: 'About', description: 'Who I am and what I do' },
   { id: 'experience', label: 'Experience', title: 'Experience', description: 'Roles and companies' },
-  { id: 'education', label: 'Education', title: 'Education', description: 'Degrees and courses' },
+  { id: 'education', label: 'Education', title: 'Education', description: 'Degrees' },
   { id: 'skills', label: 'Skills', title: 'Skills', description: 'Core strengths' },
   { id: 'projects', label: 'Projects', title: 'Projects', description: 'Things I have built' },
   { id: 'contact', label: 'Contact', title: 'Contact', description: 'Links and where to find me' },
@@ -70,9 +70,6 @@ export const education = [
     title: 'Stockholm University',
     issuer: 'Department of Computer and System Sciences',
     date: '2022',
-    details: [
-      { label: 'Major courses', items: ['Data Mining', 'Network and Information Security', 'Research Methodology', 'Enterprise Computing and ERP System', 'Internet of Things'] },
-    ],
   },
   {
     title: 'National University of Computer and Emerging Sciences',
@@ -80,16 +77,12 @@ export const education = [
     date: '2016 - 2018',
     details: [
       { label: 'Research areas', items: ['R&D', 'Internet of Things (IoT)', 'Big Data', 'Vehicular ad hoc networks (VANETs)'] },
-      { label: 'Major courses', items: ['Machine Learning', 'Statistical Analysis and Pattern Recognition', 'Research Methodology', 'Advanced Analysis of Algorithms', 'Applied Programming', 'Theory of Programming Languages'] },
     ],
   },
   {
     title: 'The University of Lahore',
     issuer: "Bachelor's Degree, Computer Science and Information Technology",
     date: '2010 - 2014',
-    details: [
-      { label: 'Major courses', items: ['Computer Programming', 'Data Bases', 'Software Engineering', 'Software Testing & Implementation', 'Data Structures', 'Artificial Intelligence', 'Java Software Development Paradigm', 'Object-Oriented Analysis and Design', 'Object-Oriented Programming', 'Discrete Mathematics', 'Linear Algebra & Differential Equation', 'Probability & Statistics', 'Numerical Computations'] },
-    ],
   },
 ]
 
