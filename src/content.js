@@ -38,6 +38,12 @@ export const skills = [
 
 export const experience = [
   {
+    role: 'Senior Software Engineer',
+    company: 'Quantum Services AB',
+    period: 'Jan 2026 - Present',
+    location: 'Stockholm',
+  },
+  {
     role: 'Chief Executive Officer',
     company: 'Swedish Consultants',
     period: 'Sep 2025 - Present',
