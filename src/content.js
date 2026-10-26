@@ -7,7 +7,7 @@ export const profile = {
   role: 'IT Consultant',
   tagline: 'Helping businesses scale through technology & data',
   location: 'Stockholm, Sweden',
-  status: 'Open to networking, partnerships and opportunities that drive impact through technology',
+  status: 'Open to networking, partnerships and opportunities',
   timezone: 'Europe/Stockholm', // used for the clock in the status bar
   photoAlt: 'Portrait of Adnan Alvi',
 }
@@ -18,7 +18,6 @@ export const sections = [
   { id: 'experience', label: 'Experience', title: 'Experience', description: 'Roles and companies' },
   { id: 'education', label: 'Education', title: 'Education', description: 'Degrees' },
   { id: 'skills', label: 'Skills', title: 'Skills', description: 'Core strengths' },
-  { id: 'projects', label: 'Projects', title: 'Projects', description: 'Things I have built' },
   { id: 'contact', label: 'Contact', title: 'Contact', description: 'Links and where to find me' },
 ]
 
@@ -26,7 +25,6 @@ export const about = [
   'Technology leader and consultant with over a decade of experience in IT strategy, IT support, and data-driven innovation.',
   'My journey runs from hands-on engineering to leading technology strategy, helping businesses scale with cloud migration, digital transformation, and IT consulting.',
   'I have worked across Sweden, Europe, and international markets.',
-  'Open to networking, partnerships, and opportunities that drive impact through technology.',
 ]
 
 export const skills = [
@@ -54,7 +52,6 @@ export const experience = [
     company: 'SCASIA IT',
     period: 'Oct 2021 - Present',
     location: 'Stockholm',
-    description: 'IT services and consulting.',
   },
   {
     role: 'Software Engineer',
@@ -65,7 +62,8 @@ export const experience = [
   {
     role: 'IT Software Engineer',
     company: 'Scania Group',
-    period: '', // dates unknown, left blank on purpose
+    period: 'Sep 2019 - Sep 2021',
+    location: 'Stockholm',
   },
 ]
 
@@ -88,15 +86,7 @@ export const education = [
 ]
 
 // Add your projects here: { name, description, url, tech: ['Vue', ...] }
-export const projects = [
-  {
-    name: 'Your project here',
-    description: 'Placeholder: add your projects in src/content.js (the `projects` array).',
-    url: '',
-    tech: [],
-    placeholder: true,
-  },
-]
+export const projects = []
 
 export const links = [
   { label: 'LinkedIn', url: 'https://www.linkedin.com/in/adnanalvi/' },
