@@ -62,7 +62,7 @@ export const experience = [
   {
     role: 'IT Software Engineer',
     company: 'Scania Group',
-    period: 'Aug 2019 - Feb 2020',
+    period: 'Sep 2019 - Feb 2020',
     location: 'Stockholm',
   },
 ]
