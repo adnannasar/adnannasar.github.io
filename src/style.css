@@ -51,7 +51,7 @@ h1, h2, h3, p, ul { margin: 0; }
 .nav-item:not(:last-child)::after, .nav-item:last-of-type::after { content: ' |'; color: var(--muted); margin-left: 6px; }
 .nav-shortcut { color: var(--muted); font-size: 11px; }
 .nav-shortcut::before { content: '['; } .nav-shortcut::after { content: ']'; }
-.nav-toggle { display: inline-flex; align-items: center; gap: 6px; margin-left: 4px; color: var(--muted); font-size: 11px; cursor: pointer; }
+.nav-toggle { display: inline-flex; align-items: center; gap: 6px; margin-right: 4px; color: var(--muted); font-size: 11px; cursor: pointer; }
 .nav-checkbox {
   appearance: none; -webkit-appearance: none; margin: 0; width: 12px; height: 12px; display: inline-flex; justify-content: center; align-items: center;
   border: 1px solid var(--border); background: none; cursor: pointer;
