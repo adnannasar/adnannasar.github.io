@@ -65,10 +65,6 @@ defineProps({ section: { type: Object, required: true } })
           <p class="card-body">{{ p.description }}</p>
           <p v-if="p.tech && p.tech.length" class="card-tags">{{ p.tech.join('  ·  ') }}</p>
         </article>
-        <p class="para muted">
-          More on GitHub:
-          <a :href="links.find((l) => l.label === 'GitHub').url" target="_blank" rel="noopener noreferrer">{{ links.find((l) => l.label === 'GitHub').url }}</a>
-        </p>
       </div>
 
       <div v-else-if="section.id === 'contact'" class="stack">
