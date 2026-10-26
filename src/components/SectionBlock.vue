@@ -65,17 +65,13 @@ defineProps({ section: { type: Object, required: true } })
           <p class="card-body">{{ p.description }}</p>
           <p v-if="p.tech && p.tech.length" class="card-tags">{{ p.tech.join('  ·  ') }}</p>
         </article>
-        <p class="para muted">
-          More on GitHub:
-          <a :href="links.find((l) => l.label === 'GitHub').url" target="_blank" rel="noopener noreferrer">{{ links.find((l) => l.label === 'GitHub').url }}</a>
-        </p>
       </div>
 
       <div v-else-if="section.id === 'contact'" class="stack">
         <p class="para">Based in {{ profile.location }}. The best way to reach me is LinkedIn.</p>
         <ul class="list plain">
           <li v-if="email"><span class="muted">email:</span> <a :href="'mailto:' + email">{{ email }}</a></li>
-          <li v-for="l in links.filter((x) => x.label !== 'GitHub')" :key="l.url">
+          <li v-for="l in links" :key="l.url">
             <span class="muted">{{ l.label.toLowerCase() }}:</span>
             <a :href="l.url" target="_blank" rel="noopener noreferrer">{{ l.url }}</a>
           </li>

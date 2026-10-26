@@ -60,7 +60,7 @@ export const experience = [
     location: 'Stockholm',
   },
   {
-    role: 'IT Software Engineer',
+    role: 'IT/Software Engineer',
     company: 'Scania Group',
     period: 'Sep 2019 - Feb 2020',
     location: 'Stockholm',
@@ -90,7 +90,6 @@ export const projects = []
 
 export const links = [
   { label: 'LinkedIn', url: 'https://www.linkedin.com/in/adnanalvi/' },
-  { label: 'GitHub', url: 'https://github.com/adnannasar' },
 ]
 
 // TODO: add a public email address here if you want it shown. Hidden while empty.

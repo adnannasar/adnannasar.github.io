@@ -60,9 +60,6 @@ defineEmits(['run'])
         <p>{{ p.description }}</p>
         <p v-if="p.tech && p.tech.length" class="dim">{{ p.tech.join(' · ') }}</p>
       </article>
-      <p v-if="result.github">More on GitHub:
-        <a :href="result.github.url" target="_blank" rel="noopener noreferrer">{{ result.github.url }}</a>
-      </p>
     </template>
 
     <template v-else-if="result.type === 'contact'">
@@ -70,7 +67,7 @@ defineEmits(['run'])
       <p v-if="result.email">✉ <a :href="'mailto:' + result.email">{{ result.email }}</a></p>
       <p>Best way to reach me is LinkedIn:</p>
       <ul class="plain">
-        <li v-for="l in result.links.filter((x) => x.label !== 'GitHub')" :key="l.url">
+        <li v-for="l in result.links" :key="l.url">
           <span class="dim">{{ l.label }}: </span>
           <a :href="l.url" target="_blank" rel="noopener noreferrer">{{ l.url }}</a>
         </li>
